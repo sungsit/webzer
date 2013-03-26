@@ -3,6 +3,7 @@ description: "I blog to God but the sky is buggy ..."
 author: "Sungsit Sawaiwan"
 url: "http://webzer.net"
 lang: "th"
+ga:  "UA-3757716-3"
 
 permalink: "/node/:title"
 
