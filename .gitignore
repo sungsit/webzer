@@ -1,5 +1,4 @@
 # vim
-
 *.swn
 *.swo
 *.swp
@@ -9,6 +8,7 @@
 
 # Jekyll
 _site
+
 # rvm
 .rvmrc
 
