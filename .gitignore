@@ -1,0 +1,16 @@
+# vim
+
+*.swn
+*.swo
+*.swp
+
+# gedit
+*.*~
+
+# Jekyll
+_site
+# rvm
+.rvmrc
+
+# sass
+.sass-cache

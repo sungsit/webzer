@@ -1,0 +1,10 @@
+name: "webzer.net"
+description: "I blog to God but the sky is buggy ..."
+author: "Sungsit Sawaiwan"
+url: "http://webzer.net"
+lang: "th"
+
+permalink: "/node/:title"
+
+markdown: rdiscount
+exclude: [CNAME,config.rb,README.md]

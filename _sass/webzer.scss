@@ -1,0 +1,179 @@
+@import "_bootstrap.min.scss";
+
+/* Ajaxify has problems with <body> & any wrapper padding & margin */
+html {
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+a:link {
+  -moz-transition: 0.3s;
+  -webkit-transition: color 0.3s;
+  -o-transition: 0.3s;
+  transition: color 0.3s;
+}
+
+a:link,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: underline;
+}
+a:hover {
+  color: #f00;
+}
+a:visited {
+  color: #800080; 
+}
+a:active {
+  color: #ff0;
+}
+
+
+#branding h2 {
+  margin: 0;
+  font-size: 21px;
+  line-height: 24px;
+}
+
+#post-listing,
+#post-listing li {
+  display: block;
+  list-style: none;
+  clear: both;
+  padding: 0;
+  margin-left: 0;
+}
+
+article time {
+  font-weight: bold;
+}
+
+#post-listing li time {
+  display: block;
+  float: left;
+  width: 33%;
+  font-family: Menlo, Monaco, 'Courier New', monospace;
+  font-weight: bold;
+  font-size: 100%;
+  line-height: 180%;
+  -moz-transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+#post-listing li:hover time {
+  color: #f00;
+}
+
+#post-listing a {
+  display: block;
+  float: left;
+  width: 66%;
+}
+
+article h1#title {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+article h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+article h3 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+article time {
+  display: block;
+  margin-bottom: 60px;
+}
+
+article img {
+  margin: 10px 0;
+}
+
+.codeblock {
+  padding: 10px;
+  margin: 10px 0;
+  overflow: auto;
+  background: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+pre,
+code {
+  white-space: pre-wrap;
+}
+
+.codeblock code {
+  white-space: pre-wrap;
+  border: 0 none;
+}
+
+/* Ajax loader */
+#ajaxloader {
+  display: none;
+}
+
+body.loading #content {
+  opacity: 0.25;
+}
+
+body.loading #ajaxloader {
+	display: block;
+	position: fixed;
+	width: 64px;
+	height: 64px;
+	left: 45%;
+	top: 36%;
+	margin: 0 0 0 -16px;
+	border: 16px solid #777;
+	border-right-color: transparent;
+	border-radius: 50%;
+	box-shadow: 0 0 25px 2px #bbb;
+	-webkit-animation: spin 1s linear infinite;
+	-moz-animation: spin 1s linear infinite;
+	-ms-animation: spin 1s linear infinite;
+	-o-animation: spin 1s linear infinite;
+	animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+	from { -webkit-transform: rotate(0deg); opacity: 0.4; }
+	50%  { -webkit-transform: rotate(180deg); opacity: 1; }
+	to   { -webkit-transform: rotate(360deg); opacity: 0.4; }
+}
+
+@-moz-keyframes spin {
+	from { -moz-transform: rotate(0deg); opacity: 0.4; }
+	50%  { -moz-transform: rotate(180deg); opacity: 1; }
+	to   { -moz-transform: rotate(360deg); opacity: 0.4; }
+}
+
+@-ms-keyframes spin {
+	from { -ms-transform: rotate(0deg); opacity: 0.4; }
+	50%  { -ms-transform: rotate(180deg); opacity: 1; }
+	to   { -ms-transform: rotate(360deg); opacity: 0.4; }
+}
+
+@-o-keyframes spin {
+	from { -o-transform: rotate(0deg); opacity: 0.4; }
+	50%  { -o-transform: rotate(180deg); opacity: 1; }
+	to   { -o-transform: rotate(360deg); opacity: 0.4; }
+}
+
+@keyframes spin {
+	from { transform: rotate(0deg); opacity: 0.4; }
+	50%  { transform: rotate(180deg); opacity: 1; }
+	to   { transform: rotate(360deg); opacity: 0.4; }
+}
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+  <head>
+    <title>{{ page.title }} | {{ site.name }}</title>
+    <meta charset="utf-8">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.author }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/vnd.microsoft.icon">
+    
+ 	  {% include styles.html %}
+ 	  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/assets/js/html5shiv.min.js"></script>
+    <![endif]-->
+	</head>
+  <body>
+  <div id="page-container">
+  
+    {% include header.html %}
+
+    <section id="content">
+		<nav id="menu">{{ content }}</nav>
+		</section>
+
+    {% include footer.html %}
+
+  </div>
+  </body>
+	{% include scripts.html %}
+</html>

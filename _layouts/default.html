@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+  <head>
+    <title>{{ page.title }} | {{ site.name }}</title>
+    <meta charset="utf-8">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.author }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/vnd.microsoft.icon">
+    {% include styles.html %}
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/assets/js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div id="page-container">
+
+    {% include header.html %}
+	
+		<section id="content">
+      <article>
+        <h1 id="title">{{ page.title }}</h1>
+        <time datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
+        {{ content }}
+      </article>
+      
+      <hr>
+
+      <ul>
+      
+        {% if page.next %}
+          <li>Newer post: <a rel="next" href="{{ page.next.url }}">{{ page.next.title }}</a></li>
+        {% endif %}
+        
+        {% if page.previous %}
+          <li>Older post: <a rel="prev" href="{{ page.previous.url }}">{{ page.previous.title }}</a></li>
+        {% endif %}
+        
+	      <li>Front page: <a class="to-front" href="/">List all posts</a></li>
+	    </ul>
+
+		</section>
+
+    {% include footer.html %}
+
+  </div>
+  </body>
+	{% include scripts.html %}
+</html>
