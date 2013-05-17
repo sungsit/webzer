@@ -1,4 +1,5 @@
 @import "_bootstrap.min.scss";
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,900,900italic,400italic);
 
 /* Ajaxify has problems with <body> & any wrapper padding & margin */
 html {
@@ -22,9 +23,11 @@ html {
 }
 
 body,li {
-  font-family: "Helvetica Neue", Arial, BoonMan, Thonburi, Garuda, sans-serif;
+  font-family: Roboto,"Helvetica Neue", Arial, BoonMan, Thonburi, Garuda, sans-serif;
   font-size: 18px;
   line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
 }
 
 
@@ -56,7 +59,8 @@ a:active {
   margin: 0;
   font-size: 21px;
   line-height: 24px;
-  font-family: Georgia, Boon, serif; 
+  font-family: Roboto, Georgia, Boon, serif;
+  font-weight: 900;
 }
 
 #post-listing,
@@ -79,7 +83,9 @@ article time {
   font-family: Menlo, Monaco, 'Courier New', monospace;
   font-weight: bold;
   font-size: 100%;
-  line-height: 180%;
+  line-height: 1.5em;
+  letter-spacing: -1px;
+  word-spacing: -3px;
   -moz-transition: color 0.5s;
   -webkit-transition: color 0.5s;
   -o-transition: color 0.5s;
@@ -94,19 +100,21 @@ article time {
   display: block;
   float: left;
   width: 66%;
-  font-family: Georgia, Boon, serif;
-  font-weight: 900; 
+  font-family: Roboto, Georgia, Boon, serif;
+  font-weight: 900;
 }
 
 article {
   h1,h2,h3,h4,h5,h6,
   strong {
-    font-family: Georgia, Boon, serif; 
+  font-family: Roboto, Georgia, Boon, serif;
+  font-weight: 900;
   }
 }
 
 article h1#title {
-  font-family: Georgia, Boon, serif; 
+  font-family: Roboto, Georgia, Boon, serif;
+  font-weight: 900; 
   font-size: 36px;
   line-height: 1.35em;
   margin-bottom: 5px;
