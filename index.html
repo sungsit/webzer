@@ -7,7 +7,7 @@ lang: th
 <ul id="post-listing" class="clearfix">
   {% for post in site.posts %}
     <li>
-      <time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
+      <time datetime="{{ post.date }}">{{post.date | date: '%Y-%m-%d'}}</time>
       <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
