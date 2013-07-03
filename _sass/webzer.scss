@@ -1,41 +1,48 @@
 @import "_bootstrap.min.scss";
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,900,900italic,400italic);
+
+@font-face {
+  src: url("../fonts/woff/Boon-Book.woff") format("woff");
+  font-family: Boon;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("../fonts/woff/Boon-Book-Italic.woff") format("woff");
+  font-family: Boon;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("../fonts/woff/Boon-Bold.woff") format("woff");
+  font-family: Boon;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url("../fonts/woff/Boon-Bold-Italic.woff") format("woff");
+  font-family: Boon;
+  font-style: italic;
+  font-weight: 700;
+}
 
 /* Ajaxify has problems with <body> & any wrapper padding & margin */
 html {
   padding: 10px;
   margin: 0 auto;
   max-width: 600px;
+  text-rendering: optimizeLegibility;
 }
 
-@font-face {
-    font-family: 'Boon';
-    src: url('/assets/fonts/Boon-Black.woff');
-    font-weight: 900;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Boon';
-    src: url('/assets/fonts/Boon-Bold.woff');
-    font-weight:700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Boon';
-    src: url('/assets/fonts/Boon.woff');
-    font-weight:400;
-    font-style: normal;
-}
-
-body,li {
-  font-family: Roboto, Ubuntu, Georgia, Boon, "Helvetica Neue", Arial, Thonburi, Garuda, sans-serif;
-  font-size: 18px;
-  line-height: 1.35;
+body {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Boon, Roboto, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-
 
 a:link {
   -moz-transition: 0.3s;
@@ -60,13 +67,13 @@ a:active {
   color: #ff0;
 }
 
-
 #branding h2 {
   margin: 0;
-  font-size: 21px;
+  font-size: 16px;
   line-height: 24px;
-  font-family: Roboto, Georgia, Boon, serif;
-  font-weight: 900;
+  font-family: Boon, Roboto, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 #post-listing,
@@ -79,13 +86,17 @@ a:active {
 }
 
 article time {
-  font-weight: 900;
+  font-weight: 700;
+  font-style: normal;
 }
 
 #post-listing li time {
   display: block;
   float: left;
   width: 33%;
+  font-family: Boon, Roboto, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   /*font-family: Menlo, Monaco, 'Courier New', monospace;
   font-weight: 900;
   font-size: 100%;
@@ -106,35 +117,41 @@ article time {
   display: block;
   float: left;
   width: 66%;
-  font-family: Roboto, Ubuntu, Georgia, Boon, serif;
-  font-weight: 900;
+  font-family: Boon, Roboto, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 article {
   h1,h2,h3,h4,h5,h6,
   strong {
-  font-family: Roboto, Ubuntu, Georgia, Boon, serif;
-  font-weight: 900;
+  font-family: Boon, Roboto, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
   }
 }
 
 article h1#title {
-  font-family: Roboto, Ubuntu, Georgia, Boon, serif;
-  font-weight: 900; 
+  font-family: Boon, Roboto, Arial, sans-serif;
+  font-weight: 700; 
   font-size: 36px;
   line-height: 1.35em;
   margin-bottom: 5px;
   /*letter-spacing: -1px;*/
+  text-rendering: optimizeLegibility;
 }
 
 article h2 {
   font-size: 30px;
   line-height: 45px;
+  text-rendering: optimizeLegibility;
 }
 
 article h3 {
   font-size: 24px;
   line-height: 36px;
+  text-rendering: optimizeLegibility;
 }
 
 article time {
@@ -225,3 +242,8 @@ body.loading #ajaxloader {
 	to   { transform: rotate(360deg); opacity: 0.4; }
 }
 
+.browsehappy {
+  padding: 10px 20px;
+  margin: 20px 0;
+  background: yellow;
+}

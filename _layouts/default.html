@@ -15,10 +15,19 @@
   </head>
   <body>
   <div id="page-container">
+        <div class="browsehappy">
+          <p><strong>เว็บไซต์นี้</strong> ไม่รองรับบราวเซอร์ <strong>รุ่นเก่า</strong> ที่คุณใช้งานอยู่ โปรด <a href="http://browsehappy.com/">อัพเกรดบราวเซอร์ของคุณ</a> เพื่อประสบการณ์ที่ดีกว่าในการท่องเว็บ.</p>
+        </div>
+		  <!--[if lt IE 9]>
+        <div class="browsehappy">
+          <p><strong>เว็บไซต์นี้</strong> ไม่รองรับบราวเซอร์ <strong>รุ่นเก่า</strong> ที่คุณใช้งานอยู่ โปรด <a href="http://browsehappy.com/">อัพเกรดบราวเซอร์ของคุณ</a> เพื่อประสบการณ์ที่ดีกว่าในการท่องเว็บ.</p>
+        </div>
+      <![endif]-->
 
     {% include header.html %}
 	
 		<section id="content">
+
       <article>
         <h1 id="title">{{ page.title }}</h1>
         <time datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
