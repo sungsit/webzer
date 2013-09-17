@@ -1,29 +1,29 @@
 @import "_bootstrap.min.scss";
 
 @font-face {
-  src: url("../fonts/woff/Boon-Book.woff") format("woff");
-  font-family: Boon;
+  src: url("../fonts/woff/Boon-400.woff") format("woff");
+  font-family: "Boon-0.5";
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
-  src: url("../fonts/woff/Boon-Book-Italic.woff") format("woff");
-  font-family: Boon;
+  src: url("../fonts/woff/Boon-400-oblique.woff") format("woff");
+  font-family: "Boon-0.5";
   font-style: italic;
   font-weight: 400;
 }
 
 @font-face {
-  src: url("../fonts/woff/Boon-Bold.woff") format("woff");
-  font-family: Boon;
+  src: url("../fonts/woff/Boon-700.woff") format("woff");
+  font-family: "Boon-0.5";
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
-  src: url("../fonts/woff/Boon-Bold-Italic.woff") format("woff");
-  font-family: Boon;
+  src: url("../fonts/woff/Boon-700-oblique.woff") format("woff");
+  font-family: "Boon-0.5";
   font-style: italic;
   font-weight: 700;
 }
@@ -39,7 +39,7 @@ html {
 body {
   font-size: 16px;
   line-height: 24px;
-  font-family: Boon, Roboto, Arial, sans-serif;
+  font-family: "Boon-0.5", Boon, Roboto, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -71,7 +71,7 @@ a:active {
   margin: 0;
   font-size: 16px;
   line-height: 24px;
-  font-family: Boon, Roboto, Arial, sans-serif;
+  font-family: "Boon-0.5", Boon, Roboto, Arial, sans-serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -94,7 +94,7 @@ article time {
   display: block;
   float: left;
   width: 33%;
-  font-family: Boon, Roboto, Arial, sans-serif;
+  font-family: "Boon-0.5", Boon, Roboto, Arial, sans-serif;
   font-weight: 700;
   font-style: normal;
   /*font-family: Menlo, Monaco, 'Courier New', monospace;
@@ -117,7 +117,7 @@ article time {
   display: block;
   float: left;
   width: 66%;
-  font-family: Boon, Roboto, Arial, sans-serif;
+  font-family: "Boon-0.5", Boon, Roboto, Arial, sans-serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -125,7 +125,7 @@ article time {
 article {
   h1,h2,h3,h4,h5,h6,
   strong {
-  font-family: Boon, Roboto, Arial, sans-serif;
+  font-family: "Boon-0.5", Boon, Roboto, Arial, sans-serif;
   font-weight: 700;
   font-style: normal;
   text-rendering: optimizeLegibility;
@@ -133,7 +133,7 @@ article {
 }
 
 article h1#title {
-  font-family: Boon, Roboto, Arial, sans-serif;
+  font-family: "Boon-0.5", Boon, Roboto, Arial, sans-serif;
   font-weight: 700; 
   font-size: 36px;
   line-height: 1.35em;
